@@ -57,7 +57,7 @@ export class FormComponent {
     console.log(result))
   .catch(error => console.log('error',error));
   alert('success')
-  window.location.href="/show"
+  window.location.href="./show"
   }
 
 }
