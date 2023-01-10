@@ -17,6 +17,9 @@ tableSizes: any = [3, 6, 9, 12];
 onChangePage(pageOfItems: Array<any>) {          //Pagination Functionality
   this.pageOfItems = pageOfItems; 
 }
+submit(){
+  window.location.href="./form"
+}
 Hideshowform()
 {
   fetch("http://localhost:7000/employee/getemployee/",{
