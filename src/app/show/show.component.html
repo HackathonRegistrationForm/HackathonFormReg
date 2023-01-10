@@ -1,0 +1,51 @@
+ <body style="background-color:rgb(161, 209, 253)">
+ <button class="submit_btn"  (click)="Hideshowform() ">Show Participants</button> 
+ <br>
+  <br>
+  <h1 style="text-align:center;color:#143479">
+    Participants Details
+  </h1>
+
+  <section class="main" *ngFor="let text of Obj | paginate:  { itemsPerPage: 4, currentPage: p }" >      
+<div class="users"> 
+
+  <div class="card">
+   
+<table style="height:50px; padding: 2%" >
+        <tr>
+        <td class="tdstyle"> FirstName: </td> 
+        <td>{{text.fname}}</td>
+      </tr>
+      <tr>
+    <td class="tdstyle">  LastName:</td>     
+    <td>{{text.lname}}</td>
+  </tr>       
+<tr>
+    <td class="tdstyle">  Email:</td> 
+     <td> {{text.email}}</td>
+  </tr>
+<tr>       
+    <td class="tdstyle"> Project topic: </td> 
+     <td> {{text.projecttopic}}</td>
+  </tr>
+ <tr>
+    <td class="tdstyle"> Interested technology: </td>
+     <td>{{text.interestedtechnology}}</td>
+  </tr>
+  <tr>
+    <td class="tdstyle">Gender:</td>
+     <td> {{text.gender}}</td>
+  </tr> 
+  </table>     
+
+</div>
+  </div>
+
+</section>
+
+<pagination-controls style="color:#143479" 
+(pageChange)="p = $event" 
+class="float-right">
+</pagination-controls>
+  <button routerLink="/form" class="submit_btn">Back</button>
+  </body>

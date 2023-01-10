@@ -1,0 +1,60 @@
+<body>
+	<router-outlet></router-outlet>
+  <div class="wrapper" >
+  	<div class="registration_form">
+  		<div class="title">
+  			Hackathon Registration
+  		</div>
+  		<form >
+  			<div class="form_wrap">
+  				<div class="input_grp">
+  					<div class="input_wrap">
+  						<label for="fname">First Name</label>
+  						<input type="text" id="fname" [(ngModel)]="fname" autocomplete="off" name="fname">
+  					</div>
+  					<div class="input_wrap">
+  						<label for="lname">Last Name</label>
+  						<input type="text" id="lname" [(ngModel)]="lname" autocomplete="off" name="lname">
+  					</div>
+  				</div>
+  				<div class="input_wrap">
+  					<label for="email">Email Address</label>
+  					<input type="text" id="email" [(ngModel)]="email" autocomplete="off" name="email">
+  				</div>
+  				<div class="input_wrap">
+  					<label for="city">Project Topic</label>
+  					<input type="text" id="projecttopic" [(ngModel)]="projecttopic" autocomplete="off" name="projecttopic">
+  				</div>
+  				<div class="input_wrap">
+  					<label for="country">Interested Technology</label>
+            <input type="text" id="interested technology" [(ngModel)]="interestedtechnology" name="interestedtechnology" autocomplete="off">
+  				</div>
+          <div class="input_wrap">
+  					<label>Gender</label>
+  					<ul>
+  						<li>
+  							<label class="radio_wrap">
+  								<input type="radio" name="gender" value="male" class="input_radio" [(ngModel)]="gender" autocomplete="off" > 
+  								<span>Male</span>
+  							</label>
+  						</li>
+					
+  						<li>
+  							<label class="radio_wrap">
+  								<input type="radio" name="gender" value="female" [(ngModel)]="gender" autocomplete="off" class="input_radio">
+  								<span>Female</span>
+  							</label>
+  						</li>
+  					</ul>
+  				</div>
+  				<div class="input_wrap">
+  				<a href="/show">	<input type="submit" (click)="submit()" value="Submit" class="submit_btn">  </a>
+                
+				
+  				</div>
+  			</div>
+  		</form>
+	</div>
+  </div>
+  
+</body>
