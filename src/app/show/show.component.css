@@ -1,6 +1,15 @@
 table{
     margin-left: 10%;width:80%; height: 85%;
 }
+.style{
+
+    background: linear-gradient(
+       105deg,
+       #afafaf ,
+       #424242
+   );
+  }
+
 .head{
     font-size: xx-large; height: 100px; 
 }
@@ -35,7 +44,7 @@ background-color:whitesmoke;
   height: 130px;
   min-width:300px;
   color:#eee;
-  box-shadow:0px 0px 10px #143479
+  box-shadow:0px 0px 10px #ffffff
   
 }
 .header:after{
@@ -73,10 +82,10 @@ background-color:whitesmoke;
 /*  import google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 .btn2{
-  background-color: white;
-  color: #143479;
+  background-color: black;
+  color: #ffffff;
 text-align: center;
-  border: 1px solid #143479 ;
+  border: 1px solid #ffffff ;
   cursor: pointer;
   font-weight: 800;
   border-radius: 5%;
@@ -87,14 +96,15 @@ text-align: center;
 }
 .btn2:hover
 {
-  color: white;
-  background-color: #143479;
+  border:2px solid black;
+  color: black;
+  background-color: #ffffff;
 }
 .btn3{
-  background-color: white;
-  color: #143479;
+  background-color: rgb(40, 40, 40);
+  color: #fefefe;
 text-align: center;
-  border: 1px solid #143479 ;
+  border: 1px solid #ffffff ;
   cursor: pointer;
   font-weight: 800;
   border-radius: 5%;
@@ -105,8 +115,9 @@ text-align: center;
 }
 .btn3:hover
 {
-  color: white;
-  background-color: #143479;
+  border:2px solid black;
+  color: black;
+  background-color: #ffffff;
 }
 body {
   font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif; 
@@ -121,17 +132,17 @@ body {
 }
 td{
   text-align: left;
-  color: #143479;
+  color: #000000;
 }
 .tdstyle1{
-  color:#143479;
+  color:#272727;
   font-weight: bold;
 float: left;
 margin-left: -280%;
 font-size: 100px;
 }
 .tdstyle{
-  color:#143479;
+  color:#222222;
   font-weight: bold;
 }
 .main-top{
@@ -149,18 +160,18 @@ font-size: 100px;
 
 .bt
 {
-  background-color: #143479;
-  color: white;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
   padding: 5px;
-  border: 1px solid #143479;
+  border: 1px solid #000000;
   cursor: pointer;
   font-weight: 800; 
 }
 .btstyle{
   background-color: white;
-  color: #143479;
+  color: #080808;
   padding: 20px;
-  border: 1px solid #143479;
+  border: 1px solid #101010;
   cursor: pointer;
   font-weight: 800;
 }
@@ -173,7 +184,7 @@ font-size: 100px;
   }
  .submit_btn{
 	width: 100%;
-	background: #0d6ad7;
+	background: #242424;
 	padding: 20px;
 	border: 0;
   color:white;
@@ -185,7 +196,9 @@ font-size: 100px;
 }
 
  .submit_btn:hover{
-	background: #334fd8;
+	background: #ffffff;
+  color:black;
+  border:2px solid black;
 }
 .users .card{
   width: 80%;
@@ -193,7 +206,8 @@ font-size: 100px;
   background: white;
   text-align: center;
   border-radius: 10px;
-
+  display: flex;
+  flex-wrap: nowrap;
 
 }
 .users .card img{

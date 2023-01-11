@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-form',
@@ -32,6 +33,13 @@ export class FormComponent {
   console.log(this.projecttopic)
   console.log(this.interestedtechnology)
   console.log(this.gender)
+if(this.Obj.values==''){
+    Swal.fire(  
+      'Cancelled',  
+      'You Must  Enter All fields !',           //give for condition to take all properties take empty values
+      'error'                                  //then take one alert message like not save all data
+    )  
+    }else{
    const Obj={
      fname: this.fname,
      lname:this.lname,
@@ -56,7 +64,10 @@ export class FormComponent {
   .then(result =>
     console.log(result))
   .catch(error => console.log('error',error));
-  alert('success')
+    }
+  Swal.fire('Register Successfully!', '', 'success').then(() => {
+   
+})  
   window.location.href="./show"
   }
 
