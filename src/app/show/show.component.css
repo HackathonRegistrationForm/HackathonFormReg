@@ -1,173 +1,58 @@
-table{
-    margin-left: 10%;width:80%; height: 85%;
+table{margin-left: 10%;width:80%; height: 85%;
 }
-.style{
-
-    background: linear-gradient(
-       105deg,
-       #afafaf ,
-       #424242
-   );
-  }
-
-.head{
-    font-size: xx-large; height: 100px; 
-}
-
+.style{ background: linear-gradient(105deg, #afafaf , #424242); }
+.head{font-size: xx-large; height: 100px; }
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i');
-
-a{
-  text-decoration:none
-}
-
-
-
+a{ text-decoration:none}
 /*  import google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-.btn2{
-  background-color: black;
-  color: #ffffff;
-text-align: center;
-  border: 1px solid #ffffff ;
-  cursor: pointer;
-  font-weight: 800;
-  border-radius: 5%;
-  margin-left: 50%;
-  padding: 0.5%;
-  margin-top: 1%;
-  margin-bottom: 2%;
+.btn2{background-color: black;color: #ffffff;text-align: center;border: 1px solid #ffffff ;cursor: pointer;font-weight: 800; border-radius: 5%; margin-left: 50%; padding: 0.5%;margin-top: 1%; margin-bottom: 2%;
 }
 .btn2:hover
-{
-  border:2px solid black;
-  color: black;
-  background-color: #ffffff;
+{border:2px solid black; color: black;background-color: #ffffff;
 }
-.btn3{
-  background-color: rgb(40, 40, 40);
-  color: #fefefe;
-text-align: center;
-  border: 1px solid #ffffff ;
-  cursor: pointer;
-  font-weight: 800;
-  border-radius: 5%;
-  margin-left: 50%;
-  padding: 0.5%;
-  margin-top: 1%;
+.btn3{background-color: rgb(40, 40, 40); color: #fefefe;text-align: center;  border: 1px solid #ffffff ;  cursor: pointer;  font-weight: 800;border-radius: 5%;margin-left: 50%;padding: 0.5%; margin-top: 1%;
   margin-bottom: 2%;
 }
 .btn3:hover
-{
-  border:2px solid black;
-  color: black;
-  background-color: #ffffff;
+{border:2px solid black;color: black;background-color: #ffffff;
 }
 body {
   font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif; 
 }
-.main{
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  flex-direction: row;
+.main{ display: flex; flex-wrap: wrap; width: 100%; flex-direction: row;
 }
-td{
-  text-align: left;
-  color: #000000;
+td{ text-align: left; color: #000000;
 }
-.tdstyle1{
-  color:#272727;
-  font-weight: bold;
-float: left;
-margin-left: -280%;
-font-size: 100px;
+.tdstyle1{color:#272727;font-weight: bold;float: left;margin-left: -280%;font-size: 100px;
 }
-.tdstyle{
-  color:#222222;
-  font-weight: bold;
+.tdstyle{ color:#222222; font-weight: bold;
 }
-.main-top{
-  display: flex;
-  width: 100%;
+.main-top{ display: flex; width: 100%;
 }
-.main-top i{
-  position: absolute;
-  right: 0;
-  margin: 10px 30px;
-  color: rgb(110, 109, 109);
-  cursor: pointer;
+.main-top i{ position: absolute; right: 0; margin: 10px 30px; color: rgb(110, 109, 109); cursor: pointer;
 }
 .bt
-{
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
-  padding: 5px;
-  border: 1px solid #000000;
-  cursor: pointer;
-  font-weight: 800; 
+{ background-color: #ffffff; color: rgb(0, 0, 0); padding: 5px; border: 1px solid #000000; cursor: pointer; font-weight: 800; 
 }
-.btstyle{
-  background-color: white;
-  color: #080808;
-  padding: 20px;
-  border: 1px solid #101010;
-  cursor: pointer;
-  font-weight: 800;
+.btstyle{ background-color: white; color: #080808;padding: 20px;border: 1px solid #101010;cursor: pointer;font-weight: 800;
 }
-.main .users{
-    display: flex;
-    width: 100%;
+.main .users{ display: flex; width: 100%;
   }
- .submit_btn{
-	width: 100%;
-	background: #242424;
-	padding: 20px;
-	border: 0;
-  color:white;
-  font-size:20px;
-	border-radius: 3px;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	cursor: pointer;
+ .submit_btn{width: 100%;background: #242424;padding: 20px;border: 0; color:white; font-size:20px;border-radius: 3px;text-transform: uppercase;letter-spacing: 2px;cursor: pointer;
 }
- .submit_btn:hover{
-	background: #ffffff;
-  color:black;
-  border:2px solid black;
+ .submit_btn:hover{	background: #ffffff; color:black; border:2px solid black;
 }
-.users .card{
-  width: 100%;
-  margin: 20px;
-  background: white;
-  text-align: center;
-  border-radius: 10px;
-  display: flex;
-  flex-wrap: nowrap;
-
+.users .card{ width: 100%; margin: 20px; background: white; text-align: center; border-radius: 10px; display: flex; flex-wrap: nowrap;
 }
-.users .card h4{
-  text-transform: uppercase;
+.users .card h4{text-transform: uppercase;
 }
-.users .card p{
-  font-size: 12px;
-  margin-bottom: 15px;
-  text-transform: uppercase;
+.users .card p{ font-size: 12px; margin-bottom: 15px; text-transform: uppercase;
 }
 .users table{
   margin:  auto;
 }
-.users .per span{
-  padding: 5px;
-  border-radius: 10px;
-  background: rgb(223, 223, 223);
+.users .per span{ padding: 5px; border-radius: 10px; background: rgb(223, 223, 223);
 }
-.users td{
-  font-size: 14px;
-  padding-right: 15px;
+.users td{ font-size: 14px; padding-right: 15px;
 }
-
-
-   
-
- 
-
