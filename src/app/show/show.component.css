@@ -2,10 +2,10 @@ table{margin-left: 10%;width:80%; height: 85%;
 }
 .style{ background: linear-gradient(105deg, #afafaf , #424242); }
 .head{font-size: xx-large; height: 100px; }
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i');
+
 a{ text-decoration:none}
 /*  import google fonts */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
 .btn2{background-color: black;color: #ffffff;text-align: center;border: 1px solid #ffffff ;cursor: pointer;font-weight: 800; border-radius: 5%; margin-left: 50%; padding: 0.5%;margin-top: 1%; margin-bottom: 2%;
 }
 .btn2:hover
