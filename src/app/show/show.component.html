@@ -5,12 +5,10 @@
   <h1 style="text-align:center;color:#ffffff">
     Participants Details
   </h1>
-
-  <section class="main" *ngFor="let text of Obj | paginate:  { itemsPerPage: 4, currentPage: p }" >      
-<div class="users"> 
-
+  <section class="main"  >
+  <div *ngFor="let text of Obj | paginate:  { itemsPerPage: 8, currentPage: p }" >      
+<div class="users">
   <div class="card">
-   
 <table style="height:50px; padding: 2%" >
         <tr>
         <td class="tdstyle"> FirstName: </td> 
@@ -37,12 +35,10 @@
      <td> {{text.gender}}</td>
   </tr> 
   </table>     
-
 </div>
   </div>
-
+  </div>
 </section>
-
 <pagination-controls style="color:#143479" 
 (pageChange)="p = $event" 
 class="float-right">

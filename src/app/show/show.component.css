@@ -178,9 +178,9 @@ font-size: 100px;
 .main .users{
     display: flex;
    
-    width: 50%;
+    width: 100%;
 
-  margin-left: 30%;
+
   }
  .submit_btn{
 	width: 100%;
@@ -201,7 +201,7 @@ font-size: 100px;
   border:2px solid black;
 }
 .users .card{
-  width: 80%;
+  width: 100%;
   margin: 20px;
   background: white;
   text-align: center;
@@ -210,11 +210,7 @@ font-size: 100px;
   flex-wrap: nowrap;
 
 }
-.users .card img{
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-}
+
 .users .card h4{
   text-transform: uppercase;
 }
@@ -240,3 +236,4 @@ font-size: 100px;
    
 
  
+

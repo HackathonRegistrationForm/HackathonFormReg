@@ -20,26 +20,15 @@ export class FormComponent {
     Obj: any;
   
   ngOnInit(): void {
-  
-  
   }
-
   submit(){
-
-    
   console.log(this.fname)
   console.log(this.lname)
   console.log(this.email)
   console.log(this.projecttopic)
   console.log(this.interestedtechnology)
   console.log(this.gender)
-if(this.Obj.values==''){
-    Swal.fire(  
-      'Cancelled',  
-      'You Must  Enter All fields !',           //give for condition to take all properties take empty values
-      'error'                                  //then take one alert message like not save all data
-    )  
-    }else{
+{
    const Obj={
      fname: this.fname,
      lname:this.lname,
@@ -65,9 +54,7 @@ if(this.Obj.values==''){
     console.log(result))
   .catch(error => console.log('error',error));
     }
-  Swal.fire('Register Successfully!', '', 'success').then(() => {
-   
-})  
+
   window.location.href="./show"
   }
 

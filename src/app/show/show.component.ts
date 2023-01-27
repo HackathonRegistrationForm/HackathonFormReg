@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./show.component.css']
 })
 export class ShowComponent {
-Obj:any;
+Obj:any=[];
   pageOfItems: any;
   p: number = 1;
 POSTS: any;
@@ -14,6 +14,9 @@ page: number = 1;
 count: number = 0;                                       //Here we declare all properties what we have given
 tableSize: number = 7;
 tableSizes: any = [3, 6, 9, 12];
+constructor(){
+  this.Hideshowform()
+}
 onChangePage(pageOfItems: Array<any>) {          //Pagination Functionality
   this.pageOfItems = pageOfItems; 
 }
