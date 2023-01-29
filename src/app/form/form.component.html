@@ -5,54 +5,70 @@
   		<div class="title">
   			Hackathon Registration
   		</div>
-  		<form >
+  		<form [formGroup]="hacathon" (ngSubmit)="onsubmit()" >
   			<div class="form_wrap">
   				<div class="input_grp">
   					<div class="input_wrap">
   						<label for="fname">First Name</label>
-  						<input type="text" id="fname" [(ngModel)]="fname" autocomplete="off" name="fname">
+  						<input type="text" id="fname" formControlName="fname" autocomplete="off" name="fname" >
+							  <span style="color: red;" *ngIf="fname && fname.invalid && fname.touched">Please enter your firstname</span>
+						
   					</div>
   					<div class="input_wrap">
   						<label for="lname">Last Name</label>
-  						<input type="text" id="lname" [(ngModel)]="lname" autocomplete="off" name="lname">
-  					</div>
+  						<input type="text" id="lname" formControlName="lname" autocomplete="off" name="lname"  />
+						 
+							  <span style="color: red;" *ngIf="lname && lname.invalid && lname.touched">Please enter your lastname</span>
+						  </div>
+  				
   				</div>
   				<div class="input_wrap">
   					<label for="email">Email Address</label>
-  					<input type="text" id="email" [(ngModel)]="email" autocomplete="off" name="email">
+  					<input type="text" id="email" formControlName="email" autocomplete="off" name="email">
+					 
+						  <span style="color: red;" *ngIf="email && email.invalid && email.touched">Please enter your valid email</span>
+					
   				</div>
   				<div class="input_wrap">
   					<label for="city">Project Topic</label>
-  					<input type="text" id="projecttopic" [(ngModel)]="projecttopic" autocomplete="off" name="projecttopic">
+  					<input type="text" id="projecttopic" formControlName="projecttopic" autocomplete="off" name="projecttopic">
+
+						  <span style="color: red;" *ngIf="projecttopic && projecttopic.invalid && projecttopic.touched">Please enter your project topic</span>
+
+					
   				</div>
   				<div class="input_wrap">
   					<label for="country">Interested Technology</label>
-            <input type="text" id="interested technology" [(ngModel)]="interestedtechnology" name="interestedtechnology" autocomplete="off">
+            <input type="text" id="interested technology" formControlName="interestedtechnology" name="interestedtechnology" autocomplete="off" >
+
+						  <span style="color: red;" *ngIf="interestedtechnology && interestedtechnology.invalid && interestedtechnology.touched">Please enter your Interested Technology</span>
+						
+					
   				</div>
           <div class="input_wrap">
   					<label>Gender</label>
   					<ul>
   						<li>
   							<label class="radio_wrap">
-  								<input type="radio" name="gender" value="male" class="input_radio" [(ngModel)]="gender" autocomplete="off" > 
+  								<input type="radio" name="gender" value="male" class="input_radio" formControlName="gender" autocomplete="off" > 
   								<span>Male</span>
   							</label>
   						</li>
 					
   						<li>
   							<label class="radio_wrap">
-  								<input type="radio" name="gender" value="female" [(ngModel)]="gender" autocomplete="off" class="input_radio">
+  								<input type="radio" name="gender" value="female" formControlName="gender" autocomplete="off" class="input_radio">
   								<span>Female</span>
   							</label>
   						</li>
   					</ul>
   				</div>
   				<div class="input_wrap">
-  					<input type="submit" routerLink="/show" (click)="submit()" value="Submit" class="submit_btn"> 
+  					<input type="submit" (click)="onSubmit()" value="Submit" class="submit_btn"> 
   				</div>
   			</div>
   		</form>
 	</div>
   </div>
-  
-</body>
+  </body>
+
