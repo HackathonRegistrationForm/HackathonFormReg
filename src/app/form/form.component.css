@@ -31,8 +31,8 @@ body{
 	padding: 25px;
 	border-radius: 5px;
 	height: 30%;
-	width: 400px;
-	margin-left: -50%;
+	width: 450px;
+	margin-left: -30%;
 	margin-top: -5%;
 }
 
@@ -41,7 +41,7 @@ body{
 	padding: 25px;
 	border-radius: 5px;
 	width: 400px;
-	margin-left: 15%;
+	margin-left: 40%;
 	margin-top: -100%;
 }
 .registration_form .title{
