@@ -1,6 +1,82 @@
 <body>
-	<router-outlet></router-outlet>
-  <div class="wrapper" >
+	<h1 style="color:aliceblue;text-align: center;font-size: 50px;">Hackathon Application Register By FEB 18-20</h1><br>
+	<hr>
+	<p (click)="Hideshowform()"></p>
+<p id="result"></p>
+	<div class="wrapper">
+		<div class="registration_form1">
+			
+			<div class="form_wrap">
+					<h2 style="text-align:center;">Group1</h2>
+				<br>
+					<div class="input_grp">
+						<div class="input_wrap">
+							<label  for="fname" >Registered:</label>
+							<input type="text" style="font-size: large;" id="fname" [(ngModel)]="this.List.length" autocomplete="off" name="fname" readonly>
+						</div>
+						<div class="input_wrap">
+							<label for="lname">Available</label>
+							<input type="text" id="lname" style="font-size: large;" [(ngModel)]="10-this.List.length" autocomplete="off" name="lname" readonly  />   
+							</div>
+					</div>
+					<h2 style="text-align:center;">Group2</h2>
+					<br>
+					<div class="input_grp">
+						<div class="input_wrap">							<label for="fname">Registered</label>
+							<input type="text" id="fname" style="font-size: large;" [(ngModel)]="this.List1.length" autocomplete="off" name="fname" readonly>  
+						</div>
+						<div class="input_wrap">
+							<label for="lname">Available</label>
+							<input type="text" id="lname" style="font-size:large;" [(ngModel)]="10-this.List1.length" autocomplete="off" name="lname"  readonly/>
+							</div>
+					</div>
+					<h2 style="text-align:center;">Group3</h2>
+					<br>	
+					<div class="input_grp">
+						<div class="input_wrap">
+						
+							<label for="fname">Registered</label>
+							<input type="text" id="fname" style="font-size: large;" [(ngModel)]="this.List2.length" autocomplete="off" name="fname" readonly >  
+						</div>
+						<div class="input_wrap">
+							<label for="lname">Available</label>
+							<input type="text" id="lname" style="font-size: large;" [(ngModel)]="10-this.List2.length" autocomplete="off" name="lname" readonly />
+							</div>
+					</div>
+					<h2 style="text-align:center;">Group4</h2>
+					<br>
+					<div class="input_grp">
+						<div class="input_wrap">
+							
+							<label for="fname">Registered</label>
+							<input type="text" id="fname" style="font-size: large;" [(ngModel)]="this.List3.length" autocomplete="off" name="fname"readonly >  
+						</div>
+						<div class="input_wrap">
+							<label for="lname">Available</label>
+							<input type="text" id="lname" style="font-size: large;" [(ngModel)]="10-this.List3.length" autocomplete="off" name="lname"  />
+						  
+							</div>	
+					</div>
+					<h2 style="text-align:center;">Group5</h2>
+					<br>
+					<div class="input_grp">
+						<div class="input_wrap">
+							<label for="fname">Registered</label>
+							<input type="text" id="fname" style="font-size: large;" [(ngModel)]="this.List4.length" autocomplete="off" name="fname" >
+						</div>
+						<div class="input_wrap">
+							<label for="lname">Available</label>
+							<input type="text" id="lname" style="font-size: large;" [(ngModel)]="10-this.List4.length" autocomplete="off" name="lname"  />							</div>
+					
+					</div>
+					
+					
+		</div>
+	
+		</div>
+		
+		</div>
+		<div class="wrapper" >
   	<div class="registration_form">
   		<div class="title">
   			Hackathon Registration
@@ -30,12 +106,15 @@
 					
   				</div>
   				<div class="input_wrap">
-  					<label for="city">Project Topic</label>
-  					<input type="text" id="projecttopic" formControlName="projecttopic" autocomplete="off" name="projecttopic">
-
-						  <span style="color: red;" *ngIf="projecttopic && projecttopic.invalid && projecttopic.touched">Please enter your project topic</span>
-
-					
+  					<label for="city">Groups</label>
+					<select formControlName="groups">
+						<option value="Group1">Group1</option>
+						<option value="Group2">Group2</option>
+						<option value="Group3">Group3</option>
+						<option value="Group4">Group4</option>
+						<option value="Group5">Group5</option>
+					</select>
+						  <span style="color: red;" *ngIf="groups && groups.invalid && groups.touched">Please select One Group</span>	
   				</div>
   				<div class="input_wrap">
   					<label for="country">Interested Technology</label>
@@ -70,5 +149,6 @@
   		</form>
 	</div>
   </div>
+ 
   </body>
 

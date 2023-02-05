@@ -23,7 +23,17 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-    width:100%;
+	
+}
+
+.registration_form1{
+	background: white;
+	padding: 25px;
+	border-radius: 5px;
+	height: 30%;
+	width: 400px;
+	margin-left: -50%;
+	margin-top: -5%;
 }
 
 .registration_form{
@@ -31,19 +41,19 @@ body{
 	padding: 25px;
 	border-radius: 5px;
 	width: 400px;
+	margin-left: 15%;
+	margin-top: -100%;
 }
-
 .registration_form .title{
 	text-align: center;
-	font-size: 25px;
+	font-size: 30px;
 
 	color: rgb(29, 29, 30);
 
 	letter-spacing: 1px;
 	font-weight: 700;
-  margin-top: -17px;
-  margin-left:-25px;
-  margin-right:-25px;
+
+
 }
 
 .form_wrap{

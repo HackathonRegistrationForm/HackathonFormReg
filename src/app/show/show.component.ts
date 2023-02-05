@@ -32,7 +32,6 @@ Hideshowform()
     },
     body:JSON.stringify(this.Hideshowform)
   })
-
   .then(response => response.json())
   .then(result =>{
     console.log(result),
