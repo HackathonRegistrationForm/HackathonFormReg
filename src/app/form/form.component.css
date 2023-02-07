@@ -51,7 +51,11 @@ body{
 	letter-spacing: 1px;
 	font-weight: 700;
 }
+.btn{
+	float: right;
+	padding: 1%;
 
+}
 .form_wrap{
 	margin-top: 35px;
 }
