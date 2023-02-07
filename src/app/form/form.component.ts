@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { subscribeOn } from 'rxjs';
-
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-form',
@@ -45,12 +45,18 @@ export class FormComponent {
 }
     get f() { return this.hacathon.controls; }
     onSubmit() {
-
+      if (this.hacathon.value.fname==''||this.hacathon.value.lname==''||this.hacathon.value.email==''||this.hacathon.value.groups==''||this.hacathon.value.interestedtechnology==''||this.hacathon.value.gender=='') {
+        Swal.fire(  
+          'Cancelled',  
+          'You Must  Enter All fields !',           //give for condition to take all properties take empty values
+          'error'                                  //then take one alert message like not save all data
+        )  
+    }else
     {
       this.hacathon.value.sid = this.Obj;  
-      
+      Swal.fire('Added Successfully!', '', 'success').then(() => {
         window.location.href="./show"
-      
+      }); 
       var requestOptions = {
         method: 'POST',
         body:JSON.stringify(this.hacathon.value)
@@ -72,7 +78,7 @@ export class FormComponent {
   }
   Hideshowform()
 {
-
+  debugger
   fetch("http://localhost:7000/employee/getemployee/",{
     method:"GET",
     headers:{
