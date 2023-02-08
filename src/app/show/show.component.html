@@ -1,12 +1,14 @@
  <body class="style">
- <h1 style="text-align: center; font-size: 60px;"  (click)="Hideshowform() ">Show Participants</h1> 
- <br>
-  <br>
-  <h1 style="text-align:center;color:#3b3b3b;font-size: 40px;">
-    Participants Details
-  </h1>
+  <mat-toolbar >
+		<mat-toolbar-row>
+      &nbsp;<img style="width:70px;height: 50px;" src="/assets/images-removebg-preview (1).png">
+      <h1 style="text-align: center; font-size: 60px;margin-left: 30%;"  (click)="Hideshowform() "> Participants Details</h1> 
+		</mat-toolbar-row>
+	  </mat-toolbar>
+    <br>
+    <br>
   <section class="main"  >
-  <div *ngFor="let text of Obj | paginate:  { itemsPerPage: 15, currentPage: p }" >      
+  <div *ngFor="let text of Obj | paginate:  { itemsPerPage: 10, currentPage: p }" >      
 <div class="users">
   <div class="card">
 <table >
