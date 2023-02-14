@@ -40,6 +40,11 @@ mat-toolbar-row{
    
 
 }
+h2{
+
+	padding-bottom: 2%;
+	text-align: center;
+}
 .registration_form{
 	background: white;
 	padding: 20px;
