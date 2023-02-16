@@ -25,12 +25,12 @@ submit(){
 }
 Hideshowform()
 {
-  fetch("http://localhost:7000/employee/getemployee/",{
+  fetch("http://localhost:7000/employee/getemployee",{
     method:"GET",
     headers:{
       "access-Control-Allow-Origin":"*",
     },
-    body:JSON.stringify(this.Hideshowform)
+    body:JSON.stringify(this.Obj)
   })
   .then(response => response.json())
   .then(result =>{

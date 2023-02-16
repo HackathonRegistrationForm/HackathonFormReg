@@ -176,6 +176,7 @@ select{
 .row{
 	margin-top: -30%;
 	font-weight: 600;
-	color:rgb(223, 90, 90);
+	color:white;
+	margin-left: -20%;
 	font-size: xx-large;
 }

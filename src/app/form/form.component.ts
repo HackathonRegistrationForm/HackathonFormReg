@@ -79,7 +79,7 @@ export class FormComponent {
   Hideshowform()
 {
   debugger
-  fetch("http://localhost:7000/employee/getemployee/",{
+  fetch("http://localhost:7000/employee/getemployee",{
     method:"GET",
     headers:{
       "access-Control-Allow-Origin":"*",
