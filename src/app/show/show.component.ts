@@ -30,7 +30,7 @@ Hideshowform()
     headers:{
       "access-Control-Allow-Origin":"*",
     },
-    body:JSON.stringify(this.Obj)
+    body:JSON.stringify(this.Hideshowform)
   })
   .then(response => response.json())
   .then(result =>{
