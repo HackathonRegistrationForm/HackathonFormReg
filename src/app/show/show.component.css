@@ -1,5 +1,7 @@
 
-.style{ background-color: rgb(161, 161, 161); }
+.style{
+  background-color: #c5c5c5;
+}
 .head{font-size: xx-large; height: 100px; }
 
 a{ text-decoration:none}
@@ -42,7 +44,7 @@ td{ text-align: left; color: #000000;
 }
  .submit_btn:hover{	background: #ffffff; color:black; border:2px solid black;
 }
-.users .card{ width: 100%;height: 100%; margin: 10px; background: white; text-align: center; border-radius: 10px; display: flex; flex-wrap: nowrap;
+.users .card{ width: 100%;height: 100%; margin: 10px; background: white; text-align: center; border-radius: 10px; display: flex; flex-wrap: nowrap;border:1px solid black;
 }
 .users table{
   margin:  auto;
