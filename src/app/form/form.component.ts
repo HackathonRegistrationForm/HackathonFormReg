@@ -62,7 +62,7 @@ export class FormComponent {
         body:JSON.stringify(this.hacathon.value)
       };
       console.log(requestOptions);  
-  fetch("http://localhost:7000/employee/addemployee",{
+  fetch("https://hilarious-jeans-calf.cyclic.app/employee/addemployee",{
     method:'POST',
     headers:{
       "Access-Control-Allow-Origin":"*",
@@ -79,7 +79,7 @@ export class FormComponent {
   Hideshowform()
 {
   debugger
-  fetch("http://localhost:7000/employee/getemployee",{
+  fetch("https://hilarious-jeans-calf.cyclic.app/employee/getemployee",{
     method:"GET",
     headers:{
       "access-Control-Allow-Origin":"*",

@@ -25,7 +25,7 @@ submit(){
 }
 Hideshowform()
 {
-  fetch("http://localhost:7000/employee/getemployee",{
+  fetch("https://hilarious-jeans-calf.cyclic.app/employee/getemployee",{
     method:"GET",
     headers:{
       "access-Control-Allow-Origin":"*",
