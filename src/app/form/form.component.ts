@@ -55,7 +55,7 @@ export class FormComponent {
     {
       this.hacathon.value.sid = this.Obj;  
       Swal.fire('Added Successfully!', '', 'success').then(() => {
-        
+        window.location.reload();
       }); 
       var requestOptions = {
         method: 'POST',
